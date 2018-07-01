@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Salmon Cookies</title>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,7 +30,27 @@
     Salmon Cookies</h1>
   </header>
 
-<ul id="hours"></ul>
+  <p>Enter new store information below:</p>
+  
+  <form name="newStore">
+    Store Name:
+    <input type="text" name="storeName" value=""> <br>
+    Minimum Customers:
+    <input type="text" name="minCustomers" value=""><br>
+    Maximum Customers:
+    <input type="text" name="maxCustomers" value=""><br>
+    Average Sales:
+    <input type="text" name ="avgSales" value=""><br>
+    <br>
+    <input type="button" value="Add Store" onclick("addNewStore();")>
+    <input type="reset">
+  
+  </form>
+  <br>
+
+
+<table id="table">
+</table>
 
 <script src="app.js"></script>
 </body>
