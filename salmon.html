@@ -1,12 +1,80 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Salmon Cookies</title>
+  <style>
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+#fillItOut {
+
+  font-family: "Trebuchet MS";
+}
+h1 {
+font-family:"Trebuchet MS";
+}
+a{
+  font-family: "Trebuchet MS";
+}
+  </style>
 </head>
+
 <body>
-  
+
+  <header>
+    <h1>
+      Salmon Cookies</h1>
+  </header>
+
+  <form id="fillItOut">
+    Store Name:
+    <input type="text" id="storeName" value="" required>
+    <br> Minimum Customers:
+    <input type="number" min=0 max=150 id="minCustomers" value="" required>
+    <br> Maximum Customers:
+    <input type="number" min=0 max=150 id="maxCustomers" value="" required>
+    <br> Average Sales:
+    <input type="number" min=0 max=150 id="avgSales" value="" required>
+    <br>
+    <br>
+    <input type="button" id="subButton" value="Add Store" onclick( "addNewStore();")>
+    <input type="reset">
+
+  </form>
+  <br>
+
+
+  <table id="table">
+  </table>
+  <form>
+    <input type="button" id="delete" value="Delete Last Entry" onclick("deleteEntry();")>
+  </form>
+
+  <script src="app.js"></script>
+
+  <a href="index.html">Go Back</a> 
 </body>
+
 </html>

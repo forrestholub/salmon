@@ -4,54 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Salmon Cookies</title>
+  <title>Salmon Cookie Store Front</title>
   <style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
+    * {
+      box-sizing: border-box;
     }
   
-    td,
-    th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
     }
   
-    tr:nth-child(even) {
-      background-color: #dddddd;
+    /* Style the header */
+  
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
     }
+  
+    /* Style the list inside the menu */
+  div {
+      background: yellow;
+      margin:0;
+      padding:0;
+      width: 300px;
+      height: 100px;
+      font-family: impact, Haettenschweiler, 'Arial Narrow'; 
+    }
+
+  nav {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+  }
   </style>
 </head>
 <body>
-  <header>
-    <h1>
-    Salmon Cookies</h1>
+<header>
+  <h2>The Magnificent Salmon Cookie Website</h2>
   </header>
+  <div>
+    <nav>
+    <ul>
+      <li><a class="nav" href="salmon.html" target="_self" title="Branch Out";
+        id="calc">Store Calculations</a></li>
+      <li><a class="nav" href="aboutme.html">About Me Page</a></li>
+      <li><a class="nav" href="staff.html">Staffing Requirements</a></li>
+    </ul>
+    </nav>
+    </div>
 
-  <p>Enter new store information below:</p>
-  
-  <form name="newStore">
-    Store Name:
-    <input type="text" name="storeName" value=""> <br>
-    Minimum Customers:
-    <input type="text" name="minCustomers" value=""><br>
-    Maximum Customers:
-    <input type="text" name="maxCustomers" value=""><br>
-    Average Sales:
-    <input type="text" name ="avgSales" value=""><br>
-    <br>
-    <input type="button" value="Add Store" onclick("addNewStore();")>
-    <input type="reset">
-  
-  </form>
-  <br>
-
-
-<table id="table">
-</table>
-
+<img src="pink-alaska-salmon.jpg"
+alt="Salmon Picture" title: "I want to eat you" style="width:800px;height:400px;float:none;" >
+</a>
 <script src="app.js"></script>
 </body>
 </html>
